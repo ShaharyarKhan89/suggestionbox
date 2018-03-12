@@ -1,4 +1,4 @@
-app.controller('HomeController', ['$scope','$routeParams', 'suggestions', function($scope,$routeParams,  suggestions) {
+app.controller('HomeController', ['$scope', 'suggestions', function($scope,$routeParams,  suggestions) {
 
 	$scope.posts = suggestions.posts;
 

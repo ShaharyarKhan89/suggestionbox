@@ -1,33 +1,29 @@
-  <!DOCTYPE html>
-    <html>
-    <head>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Suggestion Box</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/
+css/bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+<script type="text/javascript" src="https://code.angularjs.org/1.2.28/angular-route.min.js" ></script>
 
-   <link href="C:/ANGULARJS_PROJECT/suggestion_box/css/styles.css" rel="stylesheet">
 
-   <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body ng-app="SuggestionBox" ng-controller="HomeController">
 
-   <script  type="text/javascript" src="C:/ANGULARJS_PROJECT/suggestion_box/js/vendors/angular.min.js" ></script>
 
-   <script type="text/javascript" src="https://code.angularjs.org/1.2.28/angular-route.min.js" ></script>
+		<div ng-view></div>
 
-    <title>Suggestion Box</title>
+		<!-- Modules -->
+		<script type="text/javascript" src="js/app.js"></script>
 
-    </head>
+		<!-- Controllers -->
+		<script type="text/javascript" src="js/controllers/HomeController.js"></script>
+		<script type="text/javascript" src="js/controllers/SuggestionController.js"></script>
 
-    <body ng-app="SuggestionBox" >
+		<!-- Services -->
+		<script type="text/javascript" src="js/services/suggestions.js"></script>
 
-    <div ng-view></div>
-
-    <!-- Modules -->
-<script type="text/javascript" src="C:/ANGULARJS_PROJECT/suggestion_box/js/app.js"></script>
-
-    <!-- Controllers -->
-<script type="text/javascript" src="C:/ANGULARJS_PROJECT/suggestion_box/js/controllers/HomeController.js"></script>
-<script type="text/javascript" src="C:/ANGULARJS_PROJECT/suggestion_box/js/controllers/SuggestionController.js"></script>
-
-    <!-- Services -->
-
-  <script type="text/javascript" src="C:/ANGULARJS_PROJECT/suggestion_box/js/services/suggestions.js"></script>
-
-    </body>
-    </html>
+	</body>
+</html>
