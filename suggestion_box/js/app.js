@@ -1,3 +1,4 @@
+// app.js  
 
 var app = angular.module("SuggestionBox", ['ngRoute']);
 app.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
